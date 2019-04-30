@@ -1,2 +1,2 @@
 # markdown2pdfmake
-converter of markdown to pdfmake
+Converter of markdown to pdfmake
