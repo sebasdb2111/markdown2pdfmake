@@ -1,0 +1,14 @@
+{
+  "name": "@sebas2111/markdown2pdfmake",
+	"version": "1.0.0",
+  "description": "Converter of markdown to pdfmake",
+  "license": "MIT",
+  "repository": "sebasdb2111/markdown2pdfmake",
+  "main": "index.js",
+  "keywords": [
+    "markdown2pdfmake",
+    "npm",
+    "package",
+    "sebasdb2111"
+  ]
+}
