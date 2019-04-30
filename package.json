@@ -1,6 +1,6 @@
 {
-  "name": "@sebas2111/markdown2pdfmake",
-	"version": "1.0.0",
+  "name": "@sebas2111/markdown2pdfmake", 
+  "version": "1.0.0",
   "description": "Converter of markdown to pdfmake",
   "license": "MIT",
   "repository": "sebasdb2111/markdown2pdfmake",
