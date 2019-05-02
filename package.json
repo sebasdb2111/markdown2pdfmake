@@ -1,14 +1,55 @@
 {
-  "name": "@sebas2111/markdown2pdfmake", 
+  "name": "@sebas2111/markdown2pdfmake",
   "version": "1.0.0",
   "description": "Converter of markdown to pdfmake",
+  "author": "Sebastian Diez",
   "license": "MIT",
-  "repository": "sebasdb2111/markdown2pdfmake",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebasdb2111/markdown2pdfmake.git"
+  },
   "main": "index.js",
+  "scripts": {
+    "pretest": "eslint index.js",
+    "test": "node test/unit.js",
+    "pdf": "node test/create_pdf.js"
+  },
   "keywords": [
     "markdown2pdfmake",
     "npm",
     "package",
-    "sebasdb2111"
-  ]
+    "sebasdb2111",
+    "embeddable",
+    "markdown",
+    "editor",
+    "javascript",
+    "wysiwyg"
+  ],
+  "homepage": "https://github.com/sebasdb2111/markdown2pdfmake",
+  "dependencies": {
+    "codemirror": "*",
+    "codemirror-spell-checker": "*",
+    "marked": "*",
+    "pdfmake": "^0.1.54"
+  },
+  "devDependencies": {
+    "marked": "*",
+    "pdfmake": "^0.1.54",
+    "jsdom": "^14.0.0",
+    "simple-test-framework": "^0.1.7",
+    "browserify": "*",
+    "debug": "*",
+    "eslint": "*",
+    "gulp": "*",
+    "gulp-concat": "*",
+    "gulp-debug": "*",
+    "gulp-eslint": "*",
+    "gulp-header": "*",
+    "gulp-jsbeautifier": "*",
+    "gulp-clean-css": "*",
+    "gulp-rename": "*",
+    "gulp-uglify": "*",
+    "vinyl-source-stream": "*",
+    "vinyl-buffer": "*"
+  }
 }
