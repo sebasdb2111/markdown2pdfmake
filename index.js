@@ -1,7 +1,16 @@
 import { htmlToPdfmake } from './htmlToPdfmakeConverter/htmlToPdfmakeConverter';
 import { marked } from 'marked';
 
-module.exports = (html) => {
+module.exports = (element) => {
+    let convertMarkdownToHtml = (element) => {
+        return marked(element)
+    };
 
-    // return convertHtml(html)
+    let convertHtmlToPdf = (element) => {
+        const mdToHtml = convertMarkdownToHtml(element);
+        const htmlToPdf = htmlToPdfmake(mdToHtml);
+        return htmlToPdf;
+    };
+
+    return convertHtmlToPdf;
 };
