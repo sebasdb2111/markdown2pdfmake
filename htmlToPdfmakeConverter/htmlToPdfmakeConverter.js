@@ -63,9 +63,6 @@ module.exports = (html, wndw) => {
             if (nodeName === 'br') {
                 ret = '\n';
             }
-            if (nodeName === 'br') {
-                ret = '\n';
-            }
             if (nodeName === 'ul') {
                 ret = {"_": ret};
                 ret[nodeName] = ret._;
