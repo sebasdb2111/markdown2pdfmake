@@ -1,5 +1,5 @@
 {
-  "name": "@sebas2111/markdown2pdfmake",
+  "name": "markdown2pdfmake",
   "version": "1.0.0",
   "description": "Converter of markdown to pdfmake",
   "author": "Sebastian Diez",
