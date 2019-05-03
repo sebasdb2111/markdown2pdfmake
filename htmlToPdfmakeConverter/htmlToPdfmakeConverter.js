@@ -3,7 +3,6 @@ let {JSDOM} = jsdom;
 let {virtualDOM} = new JSDOM("");
 
 module.exports = (html, wndw) => {
-//export class htmlToPdfmake {
     let defaultStyles = {
         b: {bold: true},
         strong: {bold: true},
@@ -170,7 +169,6 @@ module.exports = (html, wndw) => {
         }
     };
 
-// refactored
     let computeStyle = (style) => {
         let styleDefs = style.split(';').map((style) => {
             return style.replace(/\s/g, '').toLowerCase().split(':')
@@ -229,11 +227,6 @@ module.exports = (html, wndw) => {
         return ret;
     };
 
-    /**
-     * Go throught the CSS styles for the element and apply them
-     * @param {Object} ret Our pdfmake object
-     * @param {String} cssStyle The CSS style string
-     */
     let setComputedStyle = (ret, cssStyle) => {
         if (cssStyle) {
             cssStyle = computeStyle(cssStyle);
@@ -249,13 +242,6 @@ module.exports = (html, wndw) => {
         });
     };
 
-    /**
-     * Returns the color in a hex format (e.g. #12ff00).
-     * Also tries to convert RGB colors into hex values
-     *
-     * @param color color as string representation
-     * @returns color as hex values for pdfmake
-     */
     let parseColor = (color) => {
         let haxRegex = new RegExp('^#([0-9a-f]{3}|[0-9a-f]{6})$');
         let rgbRegex = new RegExp('^rgb\\((\\d+),\\s*(\\d+),\\s*(\\d+)\\)$');
