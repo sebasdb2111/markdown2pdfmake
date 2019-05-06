@@ -1,6 +1,6 @@
 {
   "name": "markdown2pdfmake",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Converter of markdown to pdfmake",
   "author": "Sebastian Diez",
   "license": "MIT",

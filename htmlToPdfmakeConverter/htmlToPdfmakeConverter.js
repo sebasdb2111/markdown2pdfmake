@@ -1,5 +1,5 @@
-import {JSDOM} from 'jsdom';
-const {virtualDOM} = new JSDOM("");
+const {JSDOM} = require('jsdom');
+const {virtualDOM} = new JSDOM('');
 
 module.exports = (html, wndw) => {
     let defaultStyles = {

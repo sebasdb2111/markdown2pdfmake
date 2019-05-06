@@ -1,5 +1,5 @@
-import { htmlToPdfmake } from './htmlToPdfmakeConverter/htmlToPdfmakeConverter';
-import { marked } from 'marked';
+const htmlToPdfmake = require('./htmlToPdfmakeConverter/htmlToPdfmakeConverter');
+const marked = require('marked');
 
 module.exports = (element, window) => {
     return convertHtmlToPdf = (element) => {
