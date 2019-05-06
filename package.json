@@ -1,12 +1,15 @@
 {
   "name": "markdown2pdfmake",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converter of markdown to pdfmake",
   "author": "Sebastian Diez",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sebasdb2111/markdown2pdfmake.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sebasdb2111/markdown2pdfmake/issues"
   },
   "main": "index.js",
   "scripts": {
