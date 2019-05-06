@@ -1,6 +1,6 @@
 {
   "name": "markdown2pdfmake",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Converter of markdown to pdfmake",
   "author": "Sebastian Diez",
   "license": "MIT",
@@ -24,6 +24,8 @@
     "sebasdb2111",
     "embeddable",
     "markdown",
+    "pdfmake",
+    "convert-svg-to-png",
     "editor",
     "javascript",
     "wysiwyg"
@@ -32,12 +34,14 @@
   "dependencies": {
     "codemirror": "*",
     "codemirror-spell-checker": "*",
+    "convert-svg-to-png": "^0.5.0",
     "marked": "*",
     "pdfmake": "^0.1.54"
   },
   "devDependencies": {
     "marked": "*",
     "pdfmake": "^0.1.54",
+    "convert-svg-to-png": "^0.5.0",
     "jsdom": "^14.0.0",
     "simple-test-framework": "^0.1.7",
     "browserify": "*",
