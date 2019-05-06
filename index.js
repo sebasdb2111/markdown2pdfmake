@@ -1,14 +1,6 @@
-// const htmlToPdfmake = require('./htmlToPdfmakeConverter/htmlToPdfmakeConverter');
 const marked = require('marked');
 const {JSDOM} = require('jsdom');
 const {virtualDOM} = new JSDOM('');
-// module.exports = (element, window) => {
-//     return convertHtmlToPdf = (element) => {
-//         const mdToHtml = marked(element);
-//         const htmlToPdf = htmlToPdfmake(mdToHtml, window);
-//         return htmlToPdf;
-//     };
-// };
 
 module.exports = (html, wndw) => {
     let defaultStyles = {
