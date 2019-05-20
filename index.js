@@ -113,7 +113,14 @@ module.exports = (htmlText, wndw) => {
                             ret.style = ret.style.concat(cssClass.split(" "));
                         }
                         if (element.getAttribute("width")) {
-                            ret.width = parseFloat(element.getAttribute("width"));
+                            if (element.getAttribute("width") >= 375) {
+                                ret.width = 375;
+                            } else {
+                                ret.width = parseFloat(element.getAttribute("width"));
+                            }
+                        }
+                        else {
+                            ret.width = 375;
                         }
                         if (element.getAttribute("height")) {
                             ret.height = parseFloat(element.getAttribute("height"));
