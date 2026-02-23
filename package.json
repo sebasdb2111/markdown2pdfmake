@@ -13,9 +13,10 @@
   },
   "main": "index.js",
   "scripts": {
-    "pretest": "eslint index.js",
+    "pretest": "eslint index.js test/unit.js",
     "test": "node test/unit.js",
-    "pdf": "node test/create_pdf.js"
+    "pdf": "node test/create_pdf.js",
+    "try": "node test/playground.js"
   },
   "keywords": [
     "markdown2pdfmake",
@@ -32,29 +33,10 @@
   ],
   "homepage": "https://github.com/sebasdb2111/markdown2pdfmake",
   "dependencies": {
-    "codemirror": "*",
-    "codemirror-spell-checker": "*",
-    "marked": "*",
-    "pdfmake": "^0.1.54"
+    "jsdom": "^14.1.0",
+    "marked": "^9.1.6"
   },
   "devDependencies": {
-    "marked": "*",
-    "pdfmake": "^0.1.54",
-    "jsdom": "^14.0.0",
-    "simple-test-framework": "^0.1.7",
-    "browserify": "*",
-    "debug": "*",
-    "eslint": "*",
-    "gulp": "*",
-    "gulp-concat": "*",
-    "gulp-debug": "*",
-    "gulp-eslint": "*",
-    "gulp-header": "*",
-    "gulp-jsbeautifier": "*",
-    "gulp-clean-css": "*",
-    "gulp-rename": "*",
-    "gulp-uglify": "*",
-    "vinyl-source-stream": "*",
-    "vinyl-buffer": "*"
+    "eslint": "^8.57.1"
   }
 }

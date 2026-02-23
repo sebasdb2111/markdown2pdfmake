@@ -1,0 +1,129 @@
+[
+  {
+    "text": "Quarterly Report",
+    "fontSize": 24,
+    "bold": true,
+    "marginBottom": 5,
+    "style": [
+      "html-h1"
+    ]
+  },
+  {
+    "stack": [
+      {
+        "text": "This file is a quick sample to test "
+      },
+      {
+        "text": "markdown2pdfmake",
+        "style": [
+          "html-code"
+        ]
+      },
+      {
+        "text": " locally."
+      }
+    ],
+    "margin": [
+      0,
+      5,
+      0,
+      10
+    ],
+    "style": [
+      "html-p"
+    ]
+  },
+  {
+    "text": "Highlights",
+    "fontSize": 22,
+    "bold": true,
+    "marginBottom": 5,
+    "style": [
+      "html-h2"
+    ]
+  },
+  {
+    "ul": [
+      {
+        "text": "Completed migration",
+        "marginLeft": 5,
+        "style": [
+          "html-li"
+        ]
+      },
+      {
+        "text": "Improved tests",
+        "marginLeft": 5,
+        "style": [
+          "html-li"
+        ]
+      },
+      {
+        "text": "Reduced conversion regressions",
+        "marginLeft": 5,
+        "style": [
+          "html-li"
+        ]
+      }
+    ],
+    "style": [
+      "html-ul"
+    ]
+  },
+  {
+    "text": "Project dashboard",
+    "color": "blue",
+    "decoration": "underline",
+    "link": "https://example.com/dashboard",
+    "style": [
+      "html-a",
+      "html-p"
+    ]
+  },
+  {
+    "table": {
+      "body": [
+        [
+          {
+            "text": "Metric",
+            "bold": true,
+            "fillColor": "#EEEEEE"
+          },
+          {
+            "text": "Value",
+            "bold": true,
+            "fillColor": "#EEEEEE"
+          }
+        ],
+        [
+          {
+            "text": "Coverage"
+          },
+          {
+            "text": "92%"
+          }
+        ],
+        [
+          {
+            "text": "Bugs"
+          },
+          {
+            "text": "3"
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "image": "https://img.test/logo.png",
+    "style": [
+      "html-img"
+    ],
+    "width": 120,
+    "height": 40,
+    "margin": [
+      0,
+      8
+    ]
+  }
+]
